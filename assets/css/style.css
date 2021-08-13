@@ -25,7 +25,7 @@ html
     font-size:25px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.nav-items a
+.nav-items a, li a
 {
     color:rgb(83, 20, 20);
     transition: color 0.4s, background-color 0.4s;
@@ -34,7 +34,7 @@ html
 {
     color:green;
 }
-.slogan, #about, #gallery
+.slogan1, .slogan2, #about, #gallery, #donate, #contact, #pay
 {
     width:70%;
     margin:auto;
@@ -46,29 +46,45 @@ html
     border-radius: 15px;
     transition: backdrop-filter 0.5s, box-shadow 0.5s, border-radius 0.5s;
 }
-#gallery
+.slogan1, .slogan2
 {
-    width:50%;
+  margin-top:10%;
 }
-.slogan:hover, #about:hover, #gallery:hover
+#gallery, #contact, .slogan2, #pay
+{
+    width:60%;
+}
+.slogan1:hover, .slogan2:hover, #about:hover, #gallery:hover, #donate:hover, #contact:hover, #pay:hover
 {
     backdrop-filter: blur(8px);
-    box-shadow: 8px 8px 8px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 6px 6px 6px 4px rgba(0, 0, 0, 0.5);
     border-radius: 40px;
 }
-.slogan h1, #about h1, #gallery h1
+.slogan1 h1, .slogan2 h1, #about h1, #gallery h1, #donate h1, #contact h1, #pay h1
 {
     text-align:center;
     font-size:40px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color:rgb(168, 253, 151);
 }
-#about p, #gallery li
+#about p, #donate li, #donate ul, #contact p
 {
-    margin:1% 0.5% 1% 0.5%;
+    margin:1% 0.5% 1% 2%;
     font-size:20px;
     color:rgb(255, 231, 223);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: square;
+}
+#contact h2, #contact h2 i
+{
+    font-size: 22px;
+    margin-bottom: 2%;
+    color:rgb(255, 231, 223);
+    margin-right: 2%;
+}
+#btncenter, .figimg
+{
+  text-align: center;
 }
 /* Slideshow container */
 .slideshow-container {
@@ -102,6 +118,7 @@ html
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
+    color:white;
   }
   
   /* The dots/bullets/indicators */
@@ -141,7 +158,10 @@ html
   @media only screen and (max-width: 300px) {
     .prev, .next {font-size: 11px}
   }
-
+#btn
+{
+  margin-top:1%;
+}
 /* Footer */
 #foot
 {
@@ -155,4 +175,22 @@ html
     text-align: center;
     position:relative !important;
     top:30vh !important;
+}
+.social-icons
+{
+    margin:auto;
+    text-align: center;
+}
+.social
+{
+    margin-top:5%;
+    font-size:30px;
+    color:rgb(255, 255, 255);
+    margin-right:4%;
+    padding:10px;
+    transition: all 0.5s;
+}
+.social:hover
+{
+    color:rgb(1, 24, 1);
 }
