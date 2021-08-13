@@ -217,12 +217,11 @@ input[type="text"],input[type="number"]
     margin-left: 1%;
     font-size:20px;  
 }
-input[type="submit"]
+/* input[type="submit"], input[type="reset"],  */
+#btn1, #btn2
 {
     border:0;
-    background-color:#011053;
     color:white;
-    display:block;
     margin:50px auto;
     margin-bottom: 7%;
     font-size:25px;
@@ -230,12 +229,23 @@ input[type="submit"]
     text-align: center;
     padding: 14px 35px;
     border-radius:10px;
-    transition:background-color 0.3s, color 0.3s;
+    transition:background-color 0.3s;
     cursor: pointer;
 }
-input[type="submit"]:hover
+#btn1
 {
-    background-color:#0a1c6eee;
+  background-color:#001f05;
+  margin-left:25%;
+}
+#btn2
+{
+  background-color:#300000;
+  margin-left:13%;
+}
+/* input[type="submit"]:hover, input[type="reset"]:hover */
+#btn1:hover, #btn2:hover
+{
+    background-color:rgba(0, 0, 0, 0.58);
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
