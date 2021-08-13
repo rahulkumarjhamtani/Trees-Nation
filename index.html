@@ -51,15 +51,55 @@
 
       <div class="columns is-centered mr-0">
         <div class="is-8-desktop is-12-touch">
+
           <div id="about">
             <h1>About</h1>
             <p>This organisation organises tree plantation activities and inculcates the sense of responsibility among the young students across Rajasthan. The name of this program is ‘Go Green Kids.’ They provide free saplings in schools & colleges and let the students plant and take care of those saplings. Also, they regularly check up to see how the trees are and surprisingly have a 95 percent survival rate so far. Taking it ahead, they are now planning to expand their operations to schools and colleges across India.
             </p>
           </div>
+
+          <div id="services">
+            <h1 class="mb-6">Services</h1>
+            <div class="columns">
+              <div class="column is-5 mx-2">
+                <ul>
+                  <li>Payment Services</li>
+                  <li>View All Customers</li>
+                  <li>Currency Exchange</li>
+                  <li>Consultancy</li>
+                  <li>Individual Customer Profile</li>
+                  <li>Online Banking</li>
+                </ul>
+              </div>
+              <div class="column is-5 mx-2">
+                <ul>
+                  <li>Mobile Banking</li>
+                  <li>Private Banking</li>
+                  <li>Money Transfer</li>
+                  <li>Remittance Services</li>
+                  <li>Bank Guarantee</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
         </div>
     </div>
       
-      
+      <div id="foot">
+    <footer class="page-footer">
+      <p class="copy footer-copyright text-center text-light">Created by : Rahul Kumar Jhamtani <br> &copy; 2021 Tree Nation | All Rights Reserved</p>
+    </footer>
+  </div>
+
       
 </body>
+  <script>
+      var burger=document.getElementsByClassName('navbar-burger')[0];
+      burger.addEventListener('click', (e)=>{
+          var navbar=document.getElementById(burger.dataset.target);
+          navbar.classList.toggle('is-active');
+          burger.classList.toggle('is-active');
+      });
+  </script>
 </html>

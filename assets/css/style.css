@@ -34,7 +34,7 @@ html
 {
     color:green;
 }
-.slogan, #about
+.slogan, #about, #services
 {
     width:70%;
     margin:auto;
@@ -46,23 +46,38 @@ html
     border-radius: 15px;
     transition: backdrop-filter 0.5s, box-shadow 0.5s, border-radius 0.5s;
 }
-.slogan:hover, #about:hover
+.slogan:hover, #about:hover, #services:hover
 {
     backdrop-filter: blur(8px);
     box-shadow: 8px 8px 8px 3px rgba(0, 0, 0, 0.2);
     border-radius: 40px;
 }
-.slogan h1, #about h1
+.slogan h1, #about h1, #services h1
 {
     text-align:center;
     font-size:40px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color:rgb(168, 253, 151);
 }
-#about p
+#about p, #services li
 {
     margin:1% 0.5% 1% 0.5%;
     font-size:20px;
     color:rgb(255, 231, 223);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Footer */
+#foot
+{
+    float: left;
+    width:100%;
+    color:rgb(190, 255, 202);
+    background-color: rgb(0, 24, 2);
+    margin-top:6%;
+    padding-top:20px;
+    height:80px;
+    text-align: center;
+    position:relative !important;
+    top:30vh !important;
 }
