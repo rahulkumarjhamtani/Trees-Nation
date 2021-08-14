@@ -162,28 +162,14 @@ html
 {
   margin-top:1%;
 }
-/* Footer */
-#foot
-{
-    float: left;
-    width:100%;
-    color:rgb(190, 255, 202);
-    background-color: rgb(0, 24, 2);
-    margin-top:6%;
-    padding-top:20px;
-    height:80px;
-    text-align: center;
-    position:relative !important;
-    top:30vh !important;
-}
 .social-icons
 {
-    margin:auto;
-    text-align: center;
+  margin:auto;
+  text-align: center;
 }
 .social
 {
-    margin-top:5%;
+  margin-top:5%;
     font-size:30px;
     color:rgb(255, 255, 255);
     margin-right:4%;
@@ -192,21 +178,21 @@ html
 }
 .social:hover
 {
-    color:rgb(1, 24, 1);
+  color:rgb(1, 24, 1);
 }
 .field
 {
-    background-color: rgba(0,0,0,0.8);
-    width:50%;
+  background-color: rgba(0,0,0,0.8);
+  width:50%;
     text-align: center;
     margin-left: auto; 
     margin-right: auto;
     margin-top: 5%;
     padding: 15px;
     margin-bottom: 5%;
-}
-input[type="text"],input[type="number"]
-{
+  }
+  input[type="text"],input[type="number"]
+  {
     border:0;
     color:white;
     background-color: transparent;
@@ -216,10 +202,10 @@ input[type="text"],input[type="number"]
     width: 70%;
     margin-left: 1%;
     font-size:20px;  
-}
-/* input[type="submit"], input[type="reset"],  */
-#btn1, #btn2
-{
+  }
+  /* input[type="submit"], input[type="reset"],  */
+  #btn1, #btn2
+  {
     border:0;
     color:white;
     margin:50px auto;
@@ -231,24 +217,38 @@ input[type="text"],input[type="number"]
     border-radius:10px;
     transition:background-color 0.3s;
     cursor: pointer;
-}
-#btn1
-{
-  background-color:#001f05;
-  margin-left:25%;
-}
-#btn2
-{
-  background-color:#300000;
-  margin-left:13%;
-}
-/* input[type="submit"]:hover, input[type="reset"]:hover */
-#btn1:hover, #btn2:hover
-{
+  }
+  #btn1
+  {
+    background-color:#001f05;
+    margin-left:25%;
+  }
+  #btn2
+  {
+    background-color:#300000;
+    margin-left:13%;
+  }
+  /* input[type="submit"]:hover, input[type="reset"]:hover */
+  #btn1:hover, #btn2:hover
+  {
     background-color:rgba(0, 0, 0, 0.58);
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /* Footer */
+  #foot
+  {
+      float: left;
+      width:100%;
+      color:rgb(190, 255, 202);
+      background-color: rgb(0, 24, 2);
+      margin-top:6%;
+      padding-top:20px;
+      height:80px;
+      text-align: center;
+      position:relative !important;
+      top:30vh !important;
+  }
