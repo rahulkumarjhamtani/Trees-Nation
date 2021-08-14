@@ -23,7 +23,7 @@ var pay = document.getElementById("btn1");
                 e.preventDefault();
     
                 rzp1.on('payment.failed', function (response) {
-                    alert("Oops!!  Transaction Failed!!");
+                    alert("Transaction Failed!!");
                 });
     
                 amount.value = "";
