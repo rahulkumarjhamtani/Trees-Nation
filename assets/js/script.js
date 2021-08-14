@@ -1,4 +1,3 @@
-
 var burger = document.getElementsByClassName('navbar-burger')[0];
     burger.addEventListener('click', (e) => {
         var navbar = document.getElementById(burger.dataset.target);
