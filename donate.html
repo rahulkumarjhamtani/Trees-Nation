@@ -15,7 +15,7 @@
 
 </head>
 
-<body style="padding-top:15vh;">
+<body>
 
     <nav class="navbar navcolor is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
@@ -59,18 +59,18 @@
         <div class="is-8-desktop is-12-touch">
 
             <div class="slogan2">
-                <figure class="figimg"><img src="assets/img/logo.png" style="width:300px;height:250px;"></figure>
+                <figure class="figimg"><img src="assets/img/logo.png"></figure>
                 <h1>Cut the greed,<br> Not the green</h1>
             </div>
 
             <div id="pay">
                 <h1>Make Your Contribution</h1>
                 <div class="field">
-                    <span class="fa fa-user" style="margin-right: 5%;color:white;font-size:25px;"></span>
+                    <span class="fa fa-user dicons"></span>
                     <input type="text" name="" placeholder="Name" id="username">
                 </div>
                 <div class="field">
-                    <span class="fas fa-rupee-sign" style="margin-right: 5%;color:white;font-size:25px;"></span>
+                    <span class="fas fa-rupee-sign dicons"></span>
                     <input type="number" name="" placeholder="Amount" id="amount">
                 </div>
                 <!-- <input type="submit" name="" value="Donate">-->
@@ -89,54 +89,7 @@
     </div>
 
 </body>
+
 <script src="assets/js/script.js"></script>
-<script>
-    var pay = document.getElementById("btn1");
-
-    var amount = document.getElementById("amount");
-    var username = document.getElementById("username");
-
-    pay.addEventListener("click", function (e) {
-
-        if (parseInt(amount.value) > 0 && username.value !== "" && username.value !== " ") {
-
-            var options = {
-                "key": "rzp_test_kntBNZh5gLcJsK", // Enter the Key ID generated from the Dashboard
-                "amount": parseInt(amount.value) * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
-                "currency": "INR",
-                "name": "Trees Nation",
-                "description": "Test Transaction",
-                "handler": function (response) {
-                    alert("Donation Done Successfully");
-                },
-
-            };
-            var rzp1 = new Razorpay(options);
-            rzp1.open();
-            e.preventDefault();
-
-            rzp1.on('payment.failed', function (response) {
-                alert("Oops!!  Transaction Failed!!");
-            });
-
-            amount.value = "";
-            username.value = "";
-
-
-        }
-        else {
-            alert("Invalid Input!!!!");
-        }
-
-    });
-
-    var clear = document.getElementById("btn2");
-
-    clear.addEventListener("click", function (e) {
-        amount.value = "";
-        username.value = "";
-    })
-
-</script>
 
 </html>

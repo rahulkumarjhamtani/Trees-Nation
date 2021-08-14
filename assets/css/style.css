@@ -93,8 +93,21 @@ body
   margin-right: 2%;
 }
 
-#btncenter, .figimg {
+#btncenter, .figimg, .setmap {
   text-align: center;
+}
+
+.figimg img
+{
+  width:300px;
+  height:250px;
+}
+
+.dicons
+{
+  margin-right: 5%;
+  color:white;
+  font-size:25px;
 }
 
 /* Slideshow container */
