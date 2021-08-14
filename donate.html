@@ -10,9 +10,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/logo.png">
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
 </head>
 
-<body>
+<body style="padding-top:15vh;">
 
     <nav class="navbar navcolor is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
@@ -70,8 +73,8 @@
                     <span class="fas fa-rupee-sign" style="margin-right: 5%;color:white;font-size:25px;"></span>
                     <input type="number" name="" placeholder="Amount" id="amount">
                 </div>
-                <!-- <input type="submit" name="" value="Donate">
-                <input type="reset" name="" value="Clear"> -->
+                <!-- <input type="submit" name="" value="Donate">-->
+                <!-- <input type="reset" name="" value="Clear"> -->
                 <button id="btn1">Donate</button>
                 <button id="btn2">Clear</button>
             </div>
@@ -87,4 +90,53 @@
 
 </body>
 <script src="assets/js/script.js"></script>
+<script>
+    var pay = document.getElementById("btn1");
+
+    var amount = document.getElementById("amount");
+    var username = document.getElementById("username");
+
+    pay.addEventListener("click", function (e) {
+
+        if (parseInt(amount.value) > 0 && username.value !== "" && username.value !== " ") {
+
+            var options = {
+                "key": "rzp_test_kntBNZh5gLcJsK", // Enter the Key ID generated from the Dashboard
+                "amount": parseInt(amount.value) * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+                "currency": "INR",
+                "name": "Trees Nation",
+                "description": "Test Transaction",
+                "handler": function (response) {
+                    alert("Donation Done Successfully");
+                },
+
+            };
+            var rzp1 = new Razorpay(options);
+            rzp1.open();
+            e.preventDefault();
+
+            rzp1.on('payment.failed', function (response) {
+                alert("Oops!!  Transaction Failed!!");
+            });
+
+            amount.value = "";
+            username.value = "";
+
+
+        }
+        else {
+            alert("Invalid Input!!!!");
+        }
+
+    });
+
+    var clear = document.getElementById("btn2");
+
+    clear.addEventListener("click", function (e) {
+        amount.value = "";
+        username.value = "";
+    })
+
+</script>
+
 </html>
