@@ -1,6 +1,4 @@
 html {
-  /* background: radial-gradient(ellipse at top, #013f01, transparent) no-repeat center center fixed,
-            radial-gradient(ellipse at bottom, #49a001, transparent) no-repeat center center fixed; */
   background: url("../img/bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -258,7 +256,6 @@ input[type="text"], input[type="number"] {
   font-size: 20px;
 }
 
-/* input[type="submit"], input[type="reset"],  */
 #btn1, #btn2 {
   border: 0;
   color: white;
@@ -283,7 +280,6 @@ input[type="text"], input[type="number"] {
   margin-left: 13%;
 }
 
-/* input[type="submit"]:hover, input[type="reset"]:hover */
 #btn1:hover, #btn2:hover {
   background-color: rgba(0, 0, 0, 0.58);
 }
