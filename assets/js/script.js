@@ -36,9 +36,9 @@ var burger = document.getElementsByClassName('navbar-burger')[0];
         location. href = "donate.html";
         };
 
-    // var preloader = document.getElementById("stopspin");
-    // function loadpage() {
-    //     preloader.style.display = 'none';
-    // }
+    var preloader = document.getElementById("stopspin");
+    function loadpage() {
+        preloader.style.display = 'none';
+    }
 
         
