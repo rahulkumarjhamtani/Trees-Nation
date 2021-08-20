@@ -8,14 +8,24 @@
     <title>Trees Nation</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/logo.png">
 </head>
 
-<body>
+<body onload="loadpage()">
+    <!-- loader -->
+    <div class="spinner" id="stopspin">
+        <h1>TREES NATION</h1>
+        <div></div>
+        <div></div>
+    </div>
 
     <!-- navigation bar -->
-    <nav class="navbar navcolor is-fixed-top" role="navigation" aria-label="main navigation">
+    <nav class="navbar navcolor" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="index.html">
                 <span id="heading">TREES NATION</span>
