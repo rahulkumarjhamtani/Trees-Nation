@@ -48,7 +48,7 @@ html {
   margin-bottom: 5%;
   padding: 2% 1% 2% 1%;
   border-radius: 15px;
-  margin-top:15vh;
+  margin-top:10vh;
   transition: backdrop-filter 0.5s, box-shadow 0.5s, border-radius 0.5s;
 }
 
@@ -310,7 +310,7 @@ input::-webkit-inner-spin-button {
     height:100vh;
     position: fixed;
     background-color: rgb(158, 253, 158);
-    z-index:999;
+    z-index:1000;
 }
 .spinner h1
 {
